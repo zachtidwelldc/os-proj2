@@ -2,7 +2,7 @@ package builtins_test
 
 import (
 	"errors"
-	"github.com/zachtidwelldc/os-proj2"
+	"github.com/zachtidwelldc/os-proj2/Project2/builtins"
 	"os"
 	"testing"
 )
