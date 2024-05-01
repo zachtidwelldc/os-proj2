@@ -17,7 +17,7 @@ func ListDirectory(w io.Writer, args ...string) error {
         return fmt.Errorf("%w: expected zero or one argument (directory)", ErrInvalidArgCount)
     }
 
-    files, err := ioutil.ReadDir(path)
+    files, err := os.ReadDir(path)
     if err != nil {
         return err
     }

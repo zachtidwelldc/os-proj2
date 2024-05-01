@@ -12,7 +12,7 @@ func CatFile(w io.Writer, args ...string) error {
     }
 
     for _, filename := range args {
-        content, err := ioutil.ReadFile(filename)
+        content, err := os.ReadFile(filename)
         if err != nil {
             return err
 		}
