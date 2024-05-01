@@ -3,7 +3,7 @@ package builtins
 import (
     "fmt"
     "io"
-    "io/ioutil"
+    "os"
 )
 
 func CatFile(w io.Writer, args ...string) error {
